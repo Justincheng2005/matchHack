@@ -3,8 +3,8 @@ import { getClassStudents, getClassGroups } from "../controllers/classes.js";
 
 const router = express.Router();
 
-router.get("/", getClassStudents);
-router.get("/:classId", getClassGroups);
+router.get("/students", getClassStudents);
+router.get("/groups", getClassGroups);
 
 
 

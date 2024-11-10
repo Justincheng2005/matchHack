@@ -1,13 +1,18 @@
 import express from "express";
 import cors from "cors";
+import cookieParser from "cookie-parser";
 import classRouter from "./routes/classes.js";
 import availabilityRouter from "./routes/availability.js";
 import studentRouter from "./routes/students.js";
 import studyGroupRouter from "./routes/studyGroups.js";
 
-
 const app = express();
-const port = 3000;
+const port = 8800;
+
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Credentials", true);
+  next();
+});
 
 app.use(express.json());
 app.use(
@@ -15,6 +20,7 @@ app.use(
     origin: "http://localhost:3000",
   })
 );
+app.use(cookieParser());
 
 app.use("/classes", classRouter);
 app.use("/availability", availabilityRouter);
