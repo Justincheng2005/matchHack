@@ -1,0 +1,47 @@
+.home-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #fef6f2;
+    height: 100vh;
+  }
+  
+  .home-content {
+    max-width: 50%;
+  }
+  
+  .home-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .home-content h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .highlight {
+    font-weight: bold;
+    font-size: 36px;
+  }
+  
+  .get-started-button {
+    padding: 10px 20px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  .home-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

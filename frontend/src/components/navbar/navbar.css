@@ -1,0 +1,50 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #fff;
+    border-bottom: 2px solid #000;
+}
+
+/* Left Section (Logo) */
+.navbar .left img {
+    height: 50px; /* Adjust as necessary */
+    cursor: pointer;
+}
+
+/* Right Section (Links) */
+.navbar .right {
+    display: flex;
+    gap: 20px;
+}
+
+/* Link Button Style */
+.link-button {
+    background: none;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #000;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.link-button:hover {
+    color: #0077cc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+/* Remove default link styling */
+.link-button a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Optional: Highlight Active Page (if using a CSS class or custom logic) */
+.active-link {
+    color: #0077cc;
+}
